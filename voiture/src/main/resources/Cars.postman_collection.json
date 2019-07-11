@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "fa5a2eb2-4481-41ce-b189-f26873929c5b",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/createCar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nom\": \"Megane Test\",\r\n\t\"description\": \"2008 - 2016\",\r\n\t\"construction\": 10,\r\n\t\"production\": 4000000,\r\n\t\"image\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Renault_Mégane_Paris_Deluxe_ENERGY_TCe_115_Start_%26_Stop_eco²_%28III%2C_2._Facelift%29_–_Frontansicht%2C_13._Juli_2014%2C_Ratingen.jpg/2560px-Renault_Mégane_Paris_Deluxe_ENERGY_TCe_115_Start_%26_Stop_eco²_%28III%2C_2._Facelift%29_–_Frontansicht%2C_13._Juli_2014%2C_Ratingen.jpg\",\r\n\t\"constructeur\": {\r\n\t\t\"id\": 1\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/createCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getCarById/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getCarById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getCarById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAllCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getAllCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateCar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"nom\": \"Megane Test2\",\n    \"description\": \"2008 - 2016\",\n    \"construction\": 10,\n    \"production\": 4000000,\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Renault_Mégane_Paris_Deluxe_ENERGY_TCe_115_Start_%26_Stop_eco²_%28III%2C_2._Facelift%29_–_Frontansicht%2C_13._Juli_2014%2C_Ratingen.jpg/2560px-Renault_Mégane_Paris_Deluxe_ENERGY_TCe_115_Start_%26_Stop_eco²_%28III%2C_2._Facelift%29_–_Frontansicht%2C_13._Juli_2014%2C_Ratingen.jpg\",\n    \"constructeur\": {\n        \"id\": 1,\n        \"nom\": \"Renault\",\n        \"creation\": 1899,\n        \"fondateur\": \"Fernand et Marcel Renault\",\n        \"pays\": \"france\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deleteCarById/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteCarById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteCarById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/createConstructeur",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": 7,\r\n\t\"nom\": \"Honda\",\r\n\t\"création\": 1948,\r\n\t\"fondateur\": \"Soichiro Honda et Takeo Fujisawa\",\r\n\t\"pays\": \"Japon\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/createConstructeur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createConstructeur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getConstructeurFoundById/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getConstructeurFoundById/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getConstructeurFoundById",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateConstructeur",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"nom\": \"Honda Test\",\n    \"creation\": 0,\n    \"fondateur\": \"Soichiro Honda et Takeo Fujisawa\",\n    \"pays\": \"Japon\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateConstructeur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateConstructeur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deleteConstructeurById/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteConstructeurById/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteConstructeurById",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
